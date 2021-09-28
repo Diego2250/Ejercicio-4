@@ -23,7 +23,7 @@ public class vista{
 					"2. Ver tipos de combatientes\n" +
 					"3. Ver tipos de enemigos\n" +
           "4. Ver tipos items\n" +
-					"5. Salir\n"
+					"5. Salir\n";
 
 		System.out.println(s);
 		op = scan.nextInt();
@@ -44,7 +44,7 @@ public class vista{
 					"1. Atacar\n" +
 					"2. Ver inventario\n" +
 					"3. Saltar turno\n" +
-					"4. Salir\n"
+					"4. Salir\n";
 
 		System.out.println(s);
 		op = scan.nextInt();
@@ -109,6 +109,22 @@ public class vista{
 	/*Metodo para leer el archivo
 	*/
   public void Estatus(int vida){
-    System.out.println("La vida restante es de: "+vida);
+    System.out.println("La vida restante es de: "+vida+" puntos");
+  }
+
+  public void VidaAumentada(int vida){
+    System.out.println("Se a aumentado la vida a: "+vida+" puntos");
+  }
+
+  public void AtaqueAumentado(int ataque){
+    System.out.println("Se a aumentado el ataque a: "+ataque+" puntos");
+  }
+
+  public void VidaRegenerada(int vida){
+    System.out.println("Se a regenerado la vida a: "+vida+" puntos");
+  }
+
+  public void Envenenado(int vida){
+    System.out.println("¡Te han enveneado! Se a reducido tu vida a: "+vida+" puntos");
   }
 }
